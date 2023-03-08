@@ -216,4 +216,29 @@ void functionsExercise4(int t[], int taille_t){
     }
 }
 
+int functionsExercise5(int T[], int A, int B, int taille_T){
+
+    int i=0, j=0, min=999;
+    for(i=0;i<taille_T;i++){
+        if(T[i]==A){
+            for(j=0;j<taille_T;j++){
+                if(T[j]==B){
+                    if((i-j)<0){
+                        if((j-i)<min){
+                            min=(j-i);
+                        }
+                    }
+                    else{
+                        if((i-j)<min){
+                            min=(i-j);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    return min;
+}
+
 

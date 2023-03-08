@@ -7,7 +7,8 @@
 #define CHECK_Q4 0
 #define CHECK_Q5 0
 #define CHECK_Q6 0
-#define CHECK_Q7 1
+#define CHECK_Q7 0
+#define CHECK_Q8 1
 
 void main() {
 
@@ -85,4 +86,12 @@ void main() {
 
    // L'exercice 4 remplace chaque valeur de la chaine T par la valeur maximale de la liste de départ
 
+   if (CHECK_Q8) {
+      int min;
+      int T [] = {7, 18, 90, 3, 10, 3, -40, 8, 100, 3, 90, 3, 20, 10, 50, 7};
+
+      min = functionsExercise5(T, 3, 7, 16);
+
+      printf("%s%d%s", "min = ", min, "\n");
+   }
 }
