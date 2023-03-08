@@ -181,20 +181,22 @@ void functionsExercise3Q2(int T[], int S[], int taille_T, int taille_S){
     int i=0, j=0, k=0, L[100], trouvé=0;
     
     for(i=0;i<taille_T;i++){
-        for(j=0;i<taille_S;i++){
+        for(j=0;j<taille_S;j++){
             if(T[i]==S[j]){
-                trouvé==1;
+                trouvé=1;
             }
         }
         if(trouvé!=1){
             L[k]=T[i];
             k+=1;
         }
-        trouvé=0;
+        else{
+            trouvé=0;
+        }
     }
-
+    //printf("%d%s", k, " = k\n");
     for(i=0;i<k;i++){
-        printf("%s%d%s", "multipleTrois[i] = ",L[i], "\n");
+        printf("%s%d%s", "L[i] = ",L[i], "\n");
     }
 }
 
