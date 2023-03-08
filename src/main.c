@@ -4,7 +4,9 @@
 #define CHECK_Q1 0
 #define CHECK_Q2 0
 #define CHECK_Q3 0
-#define CHECK_Q4 1
+#define CHECK_Q4 0
+#define CHECK_Q5 0
+#define CHECK_Q6 1
 
 void main() {
 
@@ -47,5 +49,25 @@ void main() {
       functionsExercise2Q2(T, 14);
       for(i=0; i<8; i++)
                         printf("T[ %d ] = %d \n", i, T[i]);
+   }
+
+
+   if (CHECK_Q5) {
+
+      //printf("ici\n");
+      int T [] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 21};
+
+      functionsExercise3Q1(T, 16);
+      
+   }
+
+   if (CHECK_Q6) {
+
+      //printf("ici\n");
+      int T [] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 21};
+
+      int S [] = {2, 3, 5, 6, 7, 11, 12, 13, 15,};
+      functionsExercise3Q2(T, S,  16, 9);
+      
    }
 }

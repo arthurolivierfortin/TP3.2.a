@@ -147,4 +147,54 @@ void functionsExercise2Q2(int T[], int taille_T) {
 
 }
 
+void functionsExercise3Q1(int T[], int taille_T){
+
+    int multipleCinq[200], multipleTrois[200], j=0, i=0, k=0;
+    //printf("%d%s%d%s", (21%3), " = 21%3 ", (15%5), " = 15%5 \n");
+    for(i=0; i<taille_T;i++){
+
+        //printf("%d%s", T[i], " = T[i] \n");
+        if((T[i]%5)==0){
+            //printf("###\n");
+            multipleCinq[j]=T[i];
+            j+=1;
+        }
+        if((T[i]%3)==0){
+            //printf("CCC\n");
+            multipleTrois[k]=T[i];
+            k+=1;
+        }
+    }
+
+    for(i=0;i<j;i++){
+        printf("%s%d%s", "multipleCinq[i] = ",multipleCinq[i], "\n");
+    }
+    printf("=================\n");
+
+    for(i=0;i<k;i++){
+        printf("%s%d%s", "multipleTrois[i] = ",multipleTrois[i], "\n");
+    }
+    
+}
+
+void functionsExercise3Q2(int T[], int S[], int taille_T, int taille_S){
+    int i=0, j=0, k=0, L[100], trouvé=0;
+    
+    for(i=0;i<taille_T;i++){
+        for(j=0;i<taille_S;i++){
+            if(T[i]==S[j]){
+                trouvé==1;
+            }
+        }
+        if(trouvé!=1){
+            L[k]=T[i];
+            k+=1;
+        }
+        trouvé=0;
+    }
+
+    for(i=0;i<k;i++){
+        printf("%s%d%s", "multipleTrois[i] = ",L[i], "\n");
+    }
+}
 
