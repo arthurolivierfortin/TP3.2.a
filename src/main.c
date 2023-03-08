@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include "../src/util.h"
 
-#define CHECK_Q1 1
-#define CHECK_Q2 0
+#define CHECK_Q1 0
+#define CHECK_Q2 1
 
 void main() {
 
