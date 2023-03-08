@@ -200,3 +200,20 @@ void functionsExercise3Q2(int T[], int S[], int taille_T, int taille_S){
     }
 }
 
+void functionsExercise4(int t[], int taille_t){
+    int i, j, h=0;
+    for(i=1;i<taille_t;i++){
+        if(t[i]>t[h]){
+            h=i;
+        }
+    }
+    for(j=(taille_t-1);j>=0;j--){
+        t[j]=t[h];
+    }
+
+    for(i=0;i<taille_t;i++){
+        printf("%s%d%s", "t[i] = ",t[i], "\n");
+    }
+}
+
+

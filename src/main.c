@@ -6,7 +6,8 @@
 #define CHECK_Q3 0
 #define CHECK_Q4 0
 #define CHECK_Q5 0
-#define CHECK_Q6 1
+#define CHECK_Q6 0
+#define CHECK_Q7 1
 
 void main() {
 
@@ -70,4 +71,18 @@ void main() {
       functionsExercise3Q2(T, S,  16, 9);
       
    }
+
+   
+   if (CHECK_Q7) {
+
+      //printf("ici\n");
+      int T [] = {1, 2, 3, 4, 5, 6, 2, 6, 3, 3, 8, 3, 3, 6, 4, 9, 6, 7, 3};
+
+      
+      functionsExercise4(T, 19);
+      
+   }
+
+   // L'exercice 4 remplace chaque valeur de la chaine T par la valeur maximale de la liste de départ
+
 }
