@@ -8,7 +8,8 @@
 #define CHECK_Q5 0
 #define CHECK_Q6 0
 #define CHECK_Q7 0
-#define CHECK_Q8 1
+#define CHECK_Q8 0
+#define CHECK_Q9 1
 
 void main() {
 
@@ -93,5 +94,14 @@ void main() {
       min = functionsExercise5(T, 3, 7, 16);
 
       printf("%s%d%s", "min = ", min, "\n");
+   }
+
+   if (CHECK_Q9) {
+
+      int T [] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+      int S [] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+      functionsExercise6(T, S, 9, 9);
+
+
    }
 }

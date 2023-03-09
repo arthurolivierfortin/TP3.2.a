@@ -1,4 +1,7 @@
 #include "../src/util.h"
+#include <math.h>
+#include <stdio.h>
+
 
 
 
@@ -239,6 +242,58 @@ int functionsExercise5(int T[], int A, int B, int taille_T){
     }
 
     return min;
+}
+
+void functionsExercise6(int T [], int S [], int taille_T, int taille_S){
+
+    int i=0, L[100], compteun=3, comptedeux=3, k=0, taille_L, j=0, stop=0, somme=0;
+
+    if(taille_T<taille_S){
+        taille_L=taille_T;
+    }
+    else{
+        taille_L=taille_S;
+    }
+
+    while(stop!=1){
+        while(compteun!=0){
+            while(comptedeux!=0){
+                //printf("============\n");
+                //printf("%d%s%d%s", i, " = i ", j, " = j \n");
+                somme+=(T[i]*T[j]);
+                comptedeux-=1;
+                i+=1;
+                j+=3;
+            }
+            j-=8;
+            i-=3;
+            L[k]=somme;
+            k+=1;
+            somme=0;
+            compteun-=1;
+            comptedeux=3;
+        }
+        if(k==taille_L){
+            stop=1;
+        }
+        i+=3;
+        j=0;
+        compteun=3;
+        
+    
+
+    }
+
+    printf("[");
+    for(i=0;i<taille_L;i++){
+        for(j=1;j<6;j++){
+            if(sqrt(taille_L)*j==i){
+                printf("]\n[");
+            }
+        }
+        printf("%d%s", L[i], " ");
+    }
+    printf("]\n");
 }
 
 
